@@ -5,30 +5,29 @@ using System.Collections.Generic;
 
 namespace tendencias_anagram
 {
-    public class Archivo
-    {
-        string[] internal_array = null;
+    public class Archivo{
+        string[] Internal_Arr = null;
 
-        public Archivo(){
-
-            internal_array = new string[]{};
+        public Archivo (){
+            Internal_Arr = new string[]{};
         }
-
-        public void decode_file (String path){
+        public Archivo (string path){
             StreamReader sr = new StreamReader(path);
             string line;
-            List<string> List = new List<string>();
+            List<string> list_string = new List<string>();
 
-            while ((line = sr.ReadLine()) != null){
-                List.Add(line);
+            while ((line = sr.ReadLine()) != null ){
+                list_string.Add(line);
             }
 
-            this.internal_array = List.ToArray();
-        }
+            this.Internal_Arr = list_string.ToArray();
 
+        }
         public string[] get_array(){
-            return this.internal_array;
+            return this.Internal_Arr;
         }
 
     }
+
+
 }
