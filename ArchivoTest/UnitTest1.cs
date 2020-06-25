@@ -18,7 +18,7 @@ namespace tendencias_anagram
         [Test]
         public void Object_Returns_Array_With_String_(){
             string[] expected_result = new string[]{"jun","adriel"};
-           Archivo ar = new Archivo(@"C:\Users\Euxen\source\repos\tendencias_anagram\ArchivoTest\ejemplo.txt");
+           Archivo ar = new Archivo(@"/home/alejandro/Documents/anagrams/dummy-anagrams/obj/Debug/netcoreapp3.1/ejemplo.txt");
 
            string[] output = ar.get_array();
 

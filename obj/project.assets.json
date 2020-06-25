@@ -4628,26 +4628,28 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Euxen\\.nuget\\packages\\": {}
+    "/home/alejandro/.nuget/packages/": {},
+    "/usr/share/dotnet/sdk/NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Euxen\\source\\repos\\tendencias_anagram\\tendencias_anagram.csproj",
+      "projectUniqueName": "/home/alejandro/Documents/anagrams/dummy-anagrams/tendencias_anagram.csproj",
       "projectName": "tendencias_anagram",
-      "projectPath": "C:\\Users\\Euxen\\source\\repos\\tendencias_anagram\\tendencias_anagram.csproj",
-      "packagesPath": "C:\\Users\\Euxen\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Euxen\\source\\repos\\tendencias_anagram\\obj\\",
+      "projectPath": "/home/alejandro/Documents/anagrams/dummy-anagrams/tendencias_anagram.csproj",
+      "packagesPath": "/home/alejandro/.nuget/packages/",
+      "outputPath": "/home/alejandro/Documents/anagrams/dummy-anagrams/obj/",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "/usr/share/dotnet/sdk/NuGetFallbackFolder"
+      ],
       "configFilePaths": [
-        "C:\\Users\\Euxen\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "/home/alejandro/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.1"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -4687,18 +4689,12 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "downloadDependencies": [
-          {
-            "name": "Microsoft.AspNetCore.App.Ref",
-            "version": "[3.1.2, 3.1.2]"
-          }
-        ],
         "frameworkReferences": {
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.300\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/3.1.301/RuntimeIdentifierGraph.json"
       }
     }
   }
