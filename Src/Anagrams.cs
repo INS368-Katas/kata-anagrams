@@ -6,8 +6,14 @@ namespace dummy_anagrams.Src
 {
     public class Anagrams
     {
-        public Anagrams(Dictionary<string, List<String>> map) { }
+        public int anagramSets;
+        public int ammount_Of_Words;
 
+        public Anagrams()
+        {
+            this.anagramSets = 0;
+            this.ammount_Of_Words = 0;
+        }
         public List<String> ProcessKeys(Dictionary<string, List<String>> map)
         {
             List<String> value = new List<string>();
@@ -17,24 +23,15 @@ namespace dummy_anagrams.Src
             }
             return value;
         }
-        public void print(Dictionary<string, List<String>> map, List<String> value)
+        public void print(Dictionary<string, List<String>> map)
         {
-            int k = 0;
-            foreach (KeyValuePair<String, List<String>> entry in map)
+            foreach (List<string> set in map.Values)
             {
-                List<String> values = map[value[k++]];
-                if (values.Count > 1)
+                if (set.Count > 1)
                 {
-                    int len = 1;
-                    foreach (String word in values)
-                    {
-                        Console.Write(word);
-                        if (len++ < values.Count)
-                        {
-                            Console.Write(", ");
-                        }
-                    }
-					Console.WriteLine();
+                    Console.WriteLine(string.Join(", ", set));
+                    this.ammount_Of_Words += set.Count;
+                    this.anagramSets++;
                 }
             }
         }

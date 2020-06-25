@@ -8,6 +8,7 @@ namespace dummy_anagrams.Src
     {
         static void Main(string[] args)
         {
+            
             Console.WriteLine();
         }
     }
