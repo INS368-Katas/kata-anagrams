@@ -5,6 +5,7 @@ using dummy_anagrams.Src;
 
 namespace dummy_anagrams.Tests
 {
+    [TestFixture]
     public class HashingTest
     {
         [Test]
