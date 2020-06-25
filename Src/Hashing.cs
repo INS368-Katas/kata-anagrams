@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace dummy_anagrams.Src
 {
@@ -24,18 +25,19 @@ namespace dummy_anagrams.Src
                 string word = lines[i];
                 char[] characters = word.ToCharArray();
                 Array.Sort(characters);
-                String words = new string(characters);
-                if (anagrams.ContainsKey(words))
+                String sorted_word = new string(characters);
+                if (anagrams.ContainsKey(sorted_word))
                 {
-                    anagrams[words].Add(word);
+                    anagrams[sorted_word].Add(word);
                 }
                 else
                 {
                     List<string> listWords = new List<string>();
                     listWords.Add(word);
-                    anagrams[words] = listWords;
+                    anagrams[sorted_word] = listWords;
                 }
             }
+
             return anagrams;
         }
     }

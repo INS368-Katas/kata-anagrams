@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "NQiW/AfOgbQC2x4Stfo8TwIcLQJiefUjB5P4Ut1ryrnj4bKbYgptkjJpY4IR/L5ngrtFVAFwNte9/R8h5jBVcA==",
+  "dgSpecHash": "0+xXePtqviBCYWEw4KQ5jyxWIA4et+ZeoeySpcMLzmBEipXvEHui/X+NYCo9Yp5401x6uLMFKq2Z9d3cyerUOA==",
   "success": true,
-  "projectFilePath": "C:\\Code\\Tendencias Lab\\Practica 6\\Git\\dummy-anagrams\\Tests\\tendencias_anagram.csproj",
+  "projectFilePath": "C:\\Code\\Tendencias Lab\\Practica 6\\Git 2\\dummy-anagrams\\Tests\\tendencias_anagram.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\DemetrioQ\\.nuget\\packages\\microsoft.codecoverage\\16.4.0\\microsoft.codecoverage.16.4.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.csharp\\4.0.1\\microsoft.csharp.4.0.1.nupkg.sha512",

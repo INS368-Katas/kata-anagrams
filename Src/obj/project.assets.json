@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Code\\Tendencias Lab\\Practica 6\\Git\\dummy-anagrams\\Src\\KataAnagram.csproj",
+      "projectUniqueName": "C:\\Code\\Tendencias Lab\\Practica 6\\Git 2\\dummy-anagrams\\Src\\KataAnagram.csproj",
       "projectName": "KataAnagram",
-      "projectPath": "C:\\Code\\Tendencias Lab\\Practica 6\\Git\\dummy-anagrams\\Src\\KataAnagram.csproj",
+      "projectPath": "C:\\Code\\Tendencias Lab\\Practica 6\\Git 2\\dummy-anagrams\\Src\\KataAnagram.csproj",
       "packagesPath": "C:\\Users\\DemetrioQ\\.nuget\\packages\\",
-      "outputPath": "C:\\Code\\Tendencias Lab\\Practica 6\\Git\\dummy-anagrams\\Src\\obj\\",
+      "outputPath": "C:\\Code\\Tendencias Lab\\Practica 6\\Git 2\\dummy-anagrams\\Src\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

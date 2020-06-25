@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Code\\Tendencias Lab\\Practica 6\\Git\\dummy-anagrams\\Tests\\tendencias_anagram.csproj": {}
+    "C:\\Code\\Tendencias Lab\\Practica 6\\Git 2\\dummy-anagrams\\Tests\\tendencias_anagram.csproj": {}
   },
   "projects": {
-    "C:\\Code\\Tendencias Lab\\Practica 6\\Git\\dummy-anagrams\\Src\\KataAnagram.csproj": {
+    "C:\\Code\\Tendencias Lab\\Practica 6\\Git 2\\dummy-anagrams\\Src\\KataAnagram.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Code\\Tendencias Lab\\Practica 6\\Git\\dummy-anagrams\\Src\\KataAnagram.csproj",
+        "projectUniqueName": "C:\\Code\\Tendencias Lab\\Practica 6\\Git 2\\dummy-anagrams\\Src\\KataAnagram.csproj",
         "projectName": "KataAnagram",
-        "projectPath": "C:\\Code\\Tendencias Lab\\Practica 6\\Git\\dummy-anagrams\\Src\\KataAnagram.csproj",
+        "projectPath": "C:\\Code\\Tendencias Lab\\Practica 6\\Git 2\\dummy-anagrams\\Src\\KataAnagram.csproj",
         "packagesPath": "C:\\Users\\DemetrioQ\\.nuget\\packages\\",
-        "outputPath": "C:\\Code\\Tendencias Lab\\Practica 6\\Git\\dummy-anagrams\\Src\\obj\\",
+        "outputPath": "C:\\Code\\Tendencias Lab\\Practica 6\\Git 2\\dummy-anagrams\\Src\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -59,14 +59,14 @@
         }
       }
     },
-    "C:\\Code\\Tendencias Lab\\Practica 6\\Git\\dummy-anagrams\\Tests\\tendencias_anagram.csproj": {
+    "C:\\Code\\Tendencias Lab\\Practica 6\\Git 2\\dummy-anagrams\\Tests\\tendencias_anagram.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Code\\Tendencias Lab\\Practica 6\\Git\\dummy-anagrams\\Tests\\tendencias_anagram.csproj",
+        "projectUniqueName": "C:\\Code\\Tendencias Lab\\Practica 6\\Git 2\\dummy-anagrams\\Tests\\tendencias_anagram.csproj",
         "projectName": "tendencias_anagram",
-        "projectPath": "C:\\Code\\Tendencias Lab\\Practica 6\\Git\\dummy-anagrams\\Tests\\tendencias_anagram.csproj",
+        "projectPath": "C:\\Code\\Tendencias Lab\\Practica 6\\Git 2\\dummy-anagrams\\Tests\\tendencias_anagram.csproj",
         "packagesPath": "C:\\Users\\DemetrioQ\\.nuget\\packages\\",
-        "outputPath": "C:\\Code\\Tendencias Lab\\Practica 6\\Git\\dummy-anagrams\\Tests\\obj\\",
+        "outputPath": "C:\\Code\\Tendencias Lab\\Practica 6\\Git 2\\dummy-anagrams\\Tests\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -85,8 +85,8 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "C:\\Code\\Tendencias Lab\\Practica 6\\Git\\dummy-anagrams\\Src\\KataAnagram.csproj": {
-                "projectPath": "C:\\Code\\Tendencias Lab\\Practica 6\\Git\\dummy-anagrams\\Src\\KataAnagram.csproj"
+              "C:\\Code\\Tendencias Lab\\Practica 6\\Git 2\\dummy-anagrams\\Src\\KataAnagram.csproj": {
+                "projectPath": "C:\\Code\\Tendencias Lab\\Practica 6\\Git 2\\dummy-anagrams\\Src\\KataAnagram.csproj"
               }
             }
           }

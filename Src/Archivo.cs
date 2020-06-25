@@ -6,7 +6,7 @@ namespace dummy_anagrams.Src
 {
     public class Archivo
     {
-        string[] Internal_Arr = null;
+        private string[] Internal_Arr = null;
 
         public Archivo()
         {
