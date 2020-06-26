@@ -17,7 +17,7 @@ namespace dummy_anagrams.Tests
         }
 
         [Test]
-        public void Assert_Sorting_Dictionary()
+        public void Assert_Sorting_Dictionary_Anagrams_Only()
         {
             string[] words = new string[] { "cat", "tca", "cta", "bos", "obs", "sob", "water" };
             Hashing hashmap = new Hashing(words);
@@ -25,9 +25,24 @@ namespace dummy_anagrams.Tests
             {
                 ["act"] = new List<string>() { "cat", "tca", "cta" },
                 ["bos"] = new List<string>() { "bos", "obs", "sob" },
-                ["aertw"] = new List<string>() { "water" },
             };
+
             Assert.AreEqual(hashmap.anagrams, expected);
+        }
+
+        [Test]
+        public void Assert_Sorting_Dictionary_All_Words()
+        {
+            string[] words = new string[] { "cat", "tca", "cta", "bos", "obs", "sob", "water" };
+            Hashing hashmap = new Hashing(words);
+            Dictionary<string, List<string>> expected = new Dictionary<string, List<string>>()
+            {
+                ["act"] = new List<string>() { "cat", "tca", "cta" },
+                ["bos"] = new List<string>() { "bos", "obs", "sob" },
+                ["aertw"] = new List<string>() { "water" }
+            };
+
+            Assert.AreEqual(hashmap.words, expected);
         }
 
     }
