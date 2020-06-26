@@ -6,6 +6,7 @@ namespace dummy_anagrams.Src
 {
     public class Hashing
     {
+        public Dictionary<string, List<string>> words = new Dictionary<string, List<string>>();
         public Dictionary<string, List<string>> anagrams = new Dictionary<string, List<string>>();
 
         public Hashing()
@@ -15,29 +16,35 @@ namespace dummy_anagrams.Src
 
         public Hashing(string[] lines)
         {
-            this.anagrams = SortWords(lines);
+            SortWords(lines);
         }
 
-        private Dictionary<string, List<string>> SortWords(string[] lines)
+        private void SortWords(string[] lines)
         {
             for (int i = 0; i < lines.Length; i++)
             {
-                string word = lines[i];
+                string word = lines[i].ToLower();
                 char[] characters = word.ToCharArray();
                 Array.Sort(characters);
-                String sorted_word = new string(characters).ToLower();
-                if (anagrams.ContainsKey(sorted_word))
+                string sorted_word = new string(characters);
+
+                if (words.ContainsKey(sorted_word))
                 {
-                    anagrams[sorted_word].Add(word);
+                    if (!words[sorted_word].Contains(word))
+                    {
+                        words[sorted_word].Add(word);
+                    }
+                    if (words[sorted_word].Count > 1)
+                    {
+                        anagrams[sorted_word] = words[sorted_word];
+                    }
                 }
                 else
                 {
-                    List<string> listWords = new List<string>();
-                    listWords.Add(word);
-                    anagrams[sorted_word] = listWords;
+                    words.Add(sorted_word, new List<string>());
+                    words[sorted_word].Add(word);
                 }
             }
-            return anagrams;
         }
     }
 }
