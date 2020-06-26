@@ -25,7 +25,7 @@ namespace dummy_anagrams.Src
                 string word = lines[i];
                 char[] characters = word.ToCharArray();
                 Array.Sort(characters);
-                String sorted_word = new string(characters);
+                String sorted_word = new string(characters).ToLower();
                 if (anagrams.ContainsKey(sorted_word))
                 {
                     anagrams[sorted_word].Add(word);
@@ -37,7 +37,6 @@ namespace dummy_anagrams.Src
                     anagrams[sorted_word] = listWords;
                 }
             }
-
             return anagrams;
         }
     }
