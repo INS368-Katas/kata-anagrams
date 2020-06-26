@@ -13,7 +13,7 @@ namespace dummy_anagrams.Src
             Archivo file = new Archivo("wordlist.txt");
             Hashing diccionary = new Hashing(file.get_array());
             Anagrams anagram = new Anagrams();
-            
+
             anagram.Print(diccionary.anagrams);
             timer.Stop();
 
