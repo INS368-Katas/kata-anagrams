@@ -32,9 +32,8 @@ namespace dummy_anagrams.Src
 
                 if (set.Value.Count > longests_set.Count)
                     longests_set = set.Value;
-
-                longests_words = anagrams[longest_key];
             }
+            longests_words = anagrams[longest_key];
         }
 
     }
