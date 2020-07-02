@@ -9,14 +9,19 @@ namespace dummy_anagrams.Src
     {
         static void Main(string[] args)
         {
+            if (args.Length < 1 || args.Length > 1)
+            {
+                throw new ArgumentException("Cantidad de argumentos erronea. format: {Katanagram.exe} {path to text file}");
+            }
+
             Console.WindowWidth = 165;
 
             Stopwatch timer = new Stopwatch();
             timer.Start();
-            Archivo file = new Archivo("wordlist.txt");
+            Archivo file = new Archivo(args[0]);
             Hashing diccionary = new Hashing(file.get_array());
             Anagrams anagram = new Anagrams(diccionary);
-            
+
             TextWriter sw = new StreamWriter(Console.OpenStandardOutput());
             Console.SetOut(sw);
             anagram.Print(sw);
@@ -34,7 +39,7 @@ namespace dummy_anagrams.Src
 
             sw.Flush();
             Console.ReadKey();
-            
+
 
         }
     }

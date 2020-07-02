@@ -14,6 +14,11 @@ namespace dummy_anagrams.Src
         }
         public Archivo(string path)
         {
+            if (!File.Exists(path))
+            {
+                throw new FileNotFoundException($"El archivo \"{path}\" no pudo ser encotnrado");
+            }
+            
             StreamReader sr = new StreamReader(path);
             string line;
             List<string> list_string = new List<string>();
